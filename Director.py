@@ -25,7 +25,7 @@ suffixNum = int(input("Enter the format Number ==> "))
 
 
 
-
+#user selected 1
 if suffixNum == 1:
     #Clears mp3 files
     listt = glob.glob("*.mp3")
@@ -36,6 +36,7 @@ if suffixNum == 1:
             print(Fore.GREEN + "[+]  " + Fore.GREEN + file  )
     else:
         print(Fore.RED + "The file does not exist in such a format")
+#user selected 2
 elif suffixNum == 2:
     #Clears psd files
     listt = glob.glob("*.psd")
@@ -46,6 +47,7 @@ elif suffixNum == 2:
             print(Fore.GREEN + "[+]  " + Fore.GREEN + file  )
     else:
         print(Fore.RED + "The file does not exist in such a format")
+#user selected 3
 elif suffixNum == 3:
     #Clears txt files
     listt = glob.glob("*.txt")
@@ -56,12 +58,13 @@ elif suffixNum == 3:
             print(Fore.GREEN + "[+]  " + Fore.GREEN + file  )
     else:
         print(Fore.RED + "The file does not exist in such a format")
+#user selected 4
 elif suffixNum == 4:
-    print(Fore.RED + "<------------------------------>")
-    #User selection
+    #Clears psd other files
+    print(Fore.RED + "<------------------------------>"
     print(Fore.WHITE  )
     suffix = input("Enter you Suffix for example 'mp3' ==> ")
-
+    
     listt = glob.glob("*."+suffix)
     init()
     if listt:
